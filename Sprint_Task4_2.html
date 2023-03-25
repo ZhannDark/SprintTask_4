@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task4.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="basy">
+  <h1 class="first">Twitter</h1>
+  <button>Tweets</button>
+  <button>Login</button>
+  <button id="btn1">Register</button>
+</div>
+<form id="log" action="" method="post">
+  <div class="next_b" id="login">
+    <div class="second">
+      <p>EMAIL:</p>
+    </div>
+    <div>
+      <input type="text" id="uE" size="30" required>
+    </div>
+    <div class="second">
+      <p>PASSWORD:</p>
+    </div>
+    <div>
+      <input type="text" id="uP" size="30" required>
+    </div>
+    <div>
+      <button onclick="sign(); return false;" id="btn">SIGN IN</button>
+    </div>
+  </div>
+</form>
+<script>
+  function sign(){
+    let uEmail = localStorage.getItem('email');
+    let uPassword = localStorage.getItem('passw');
+
+    let userE = document.getElementById('uE');
+    let userP = document.getElementById('uP');
+
+      if(userE.value == uEmail && userP.value == uPassword){
+        alert('You are logged in');
+      }
+      else{
+        alert('Error on login');
+      }
+      btn.addEventListener('dblclick', dbl());
+  }
+  function dbl() {
+    window.location.href = 'Sprint_Task_4_3.html';
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById("wel").innerHTML = 'Welcome  ' + localStorage.getItem("fn");

@@ -1,0 +1,1 @@
+document.getElementById("cou").innerHTML = localStorage.getItem("ct");

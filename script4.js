@@ -1,0 +1,1 @@
+document.getElementById("fna").innerHTML = localStorage.getItem("fn");

@@ -1,0 +1,1 @@
+document.getElementById("dat").innerHTML = localStorage.getItem("birth");
